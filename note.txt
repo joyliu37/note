@@ -75,3 +75,6 @@ Using to create a new branch with a argument
 
 We could use checkout to jump to other branch
     $git checkout [branch_name]
+
+check the branch graph provided by git
+     $git log —graph —oneline [branch_name1] [branch_name2]
