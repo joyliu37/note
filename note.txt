@@ -20,9 +20,6 @@ Date
 Will give the detail statistic of what file you changes.
      $git log —stat
 
-check the difference between each version
-     $git diff [commitID1] [commitID2]
-
 - repository
 
 Track multiple file in a project. Once I commit, I will submit all the current version of files int the repository
@@ -50,3 +47,20 @@ $git status
 
 When you want to commit file in git work space, you could upload partial of it in the area call stage area. Then commit the file in staging area to your repository.
      $ git add [file name]
+
+- git diff
+
+check the difference between each version
+     $git diff [commitID1] [commitID2]
+
+check the difference between working directory and staging area.
+Checking the recent modification you have made, show the update of the repo
+     $git diff
+
+If you want to redo the changes, you could go to the last version in staging area.
+**important** this step is irreversible. You cannot go back after this cmd
+     $git reset —hard
+
+check the difference between staging area with recent commit
+     $git diff —staged
+
