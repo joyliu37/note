@@ -1,0 +1,52 @@
+-  diff
+
+check the difference between file
+     $diff -u oldfile newfile
+
+- commit
+
+manually update the code, using a node named Commit
+     $git commit
+
+- log
+
+Check the history of the commit, which has the
+     $git log
+commit ID
+Author
+Date
+     msg of commit
+
+Will give the detail statistic of what file you changes.
+     $git log —stat
+
+check the difference between each version
+     $git diff [commitID1] [commitID2]
+
+- repository
+
+Track multiple file in a project. Once I commit, I will submit all the current version of files int the repository
+
+- clone
+
+Not only copy the code, but also clone it history
+     $git clone [repo url]
+
+- checkout
+
+going back the history version
+     $git checkout [commitID]
+
+- initial a repository
+.git folder save all the history
+    $git init
+
+- check status of repo
+
+check the changing of files
+$git status
+
+- Different space
+
+When you want to commit file in git work space, you could upload partial of it in the area call stage area. Then commit the file in staging area to your repository.
+     $ git add [file name]
