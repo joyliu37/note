@@ -64,3 +64,14 @@ If you want to redo the changes, you could go to the last version in staging are
 check the difference between staging area with recent commit
      $git diff —staged
 
+- branches
+
+Keep different version of the development which can be merge later
+Using to check the current branch
+    $git branch
+
+Using to create a new branch with a argument
+    $git branch [branch_name]
+
+We could use checkout to jump to other branch
+    $git checkout [branch_name]
