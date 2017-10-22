@@ -76,5 +76,28 @@ Using to create a new branch with a argument
 We could use checkout to jump to other branch
     $git checkout [branch_name]
 
+You could create a new branch and checkout to that branch in one single cmd
+    $git checkout -b [branch_name]
+
 check the branch graph provided by git
      $git log —graph —oneline [branch_name1] [branch_name2]
+
+Delete a branch
+     $git branch -d [branch_name]
+
+- merge
+
+Merge different branch together, cmd shows how to merge branch2 to branch1
+    $git merge [branch1]  [branch2]
+
+Or you could do
+    $git checkout [branch1]
+    $git merge [branch2]
+    
+conflict may happen if they both modify the same line of code, you could fix the conflict or abort the merge
+To abort the merge, you could run cmd:
+    $git merge —abort
+
+To show the commit’s diff in the original after merge, you could run
+    $git show [commit_ID]
+
