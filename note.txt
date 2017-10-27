@@ -111,5 +111,20 @@ add a remote repo:
      $git remote add [name of the branch(origin)]  url
 push to the remote repo
      $git push [remote branch] [local branch]
-pull from the remote repo to local
+pull from the remote repo to local, no conflict(fast-forward merge) if the remote is the ancestor of the local commit
      $git pull [remote branch] [local branch]
+
+Collaborating with other
+
+- fork(github feature)
+
+remote will also be my remote repo
+
+- conflict happened between the remote repo and the local commit
+- fetch+merge or pull
+
+Update the local copy of remote branch
+     $git fetch [remote branch]
+Solve the conflict, and update the local file
+     $git pull [remote branch] [master] =
+     $git fetch [remote branch] + $git merge [local branch] [local brach of origin remote branch]
