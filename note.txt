@@ -101,3 +101,15 @@ To abort the merge, you could run cmd:
 To show the commit’s diff in the original after merge, you could run
     $git show [commit_ID]
 
+- remote(github)
+
+check the remote repo:
+     $git remote
+check with verbose:
+     $git remote -v
+add a remote repo:
+     $git remote add [name of the branch(origin)]  url
+push to the remote repo
+     $git push [remote branch] [local branch]
+pull from the remote repo to local
+     $git pull [remote branch] [local branch]
